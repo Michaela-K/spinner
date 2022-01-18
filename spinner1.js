@@ -2,7 +2,7 @@
 //The first few characters are replaced by "heyyy". This is because \r brought our cursor back to the beginning.
 //Using this \r, we can fake an animation by replacing/rewriting characters in the same spot after a delay.
 setTimeout(() => {
-  process.stdout.write('\r|   ');
+  process.stdout.write('\r|   ');  //Removing the space padding at the end of the strings will mean that the cursor will sit on top of the animation, making it harder to see
 }, 100);
 
 setTimeout(() => {
